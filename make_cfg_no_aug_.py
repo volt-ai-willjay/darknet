@@ -8,8 +8,8 @@ def file_len(fname):
 
 num_classes = file_len('./dataset/obj.names')
 max_batches = num_classes*2000
-steps1 = .8 * max_batches
-steps2 = .9 * max_batches
+steps1 = int(.8 * max_batches)
+steps2 = int(.9 * max_batches)
 steps_str = str(steps1)+','+str(steps2)
 num_filters = (num_classes + 5) * 3
 
