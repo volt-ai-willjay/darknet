@@ -13,6 +13,8 @@ def getGPUArch(argument):
             "Tesla P4": "-gencode arch=compute_61,code=sm_61",
             "Tesla P100-PCIE-16GB": "-gencode arch=compute_60,code=sm_60",
             "Quadro P4000": "-gencode arch=compute_75,code=[sm_75,compute_75]",
+            "Quadro P5000": "-gencode arch=compute_75,code=[sm_75,compute_75]",
+            "Quadro P6000": "-gencode arch=compute_75,code=[sm_75,compute_75]",
             "Quadro RTX 5000": "-gencode arch=compute_75,code=[sm_75,compute_75]",
             "Quadro RTX 4000": "-gencode arch=compute_75,code=[sm_75,compute_75]",
           }
