@@ -26,7 +26,7 @@ with open('./cfg/custom-yolov4-tiny-detector.cfg', 'w') as out:
 #subdivisions=1
 # Training
 batch=64
-subdivisions=1
+subdivisions=24
 width=608
 height=608
 channels=3
