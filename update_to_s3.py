@@ -12,6 +12,8 @@ key = f'{now}/'
 parser = argparse.ArgumentParser()
 parser.add_argument("-s", "--source", required=True,
                     help="please specify source dir for training result dir")
+parser.add_argument("-v", "--vid", required=True,
+                    help="please specify dataset id")
 
 args = vars(parser.parse_args())
 
@@ -19,6 +21,7 @@ args = vars(parser.parse_args())
 def convert_darknet(bucket, key):
     url = 'https://https://data.api.volt.ai/convert-darknet/'
     body =  {
+                'version_id': args["vid"],
                 'input_bucket': bucket,
                 'input_dir': key
             }
