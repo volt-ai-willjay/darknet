@@ -7,7 +7,7 @@ def file_len(fname):
     return i + 1
 
 num_classes = file_len('./dataset/obj.names')
-max_batches = num_classes*2000
+max_batches = num_classes*5000
 steps1 = int(.8 * max_batches)
 steps2 = int(.9 * max_batches)
 steps_str = str(steps1)+','+str(steps2)
